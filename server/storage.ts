@@ -41,7 +41,9 @@ export class MemStorage implements IStorage {
   async createBookingRequest(insertBookingRequest: InsertBookingRequest): Promise<BookingRequest> {
     const id = randomUUID();
     const bookingRequest: BookingRequest = { 
-      ...insertBookingRequest, 
+      ...insertBookingRequest,
+      details: insertBookingRequest.details || null,
+      eventType: insertBookingRequest.eventType || null,
       id,
       createdAt: new Date()
     };
