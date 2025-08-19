@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(220, 13%, 5%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 10%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(0, 0%, 10%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(343, 100%, 58%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(48, 100%, 52%);
+  --secondary-foreground: hsl(220, 13%, 5%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --accent: hsl(0, 0%, 15%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 85%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 30%);
+  --input: hsl(0, 0%, 20%);
+  --ring: hsl(343, 100%, 58%);
+  --chart-1: hsl(343, 100%, 58%);
+  --chart-2: hsl(48, 100%, 52%);
+  --chart-3: hsl(200, 100%, 50%);
+  --chart-4: hsl(120, 100%, 40%);
+  --chart-5: hsl(280, 100%, 50%);
+  --sidebar: hsl(0, 0%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 100%);
+  --sidebar-primary: hsl(343, 100%, 58%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(0, 0%, 15%);
+  --sidebar-accent-foreground: hsl(0, 0%, 100%);
+  --sidebar-border: hsl(0, 0%, 20%);
+  --sidebar-ring: hsl(343, 100%, 58%);
+  --font-sans: 'Poppins', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 1rem;
+  
+  /* DJ Ananya Brand Colors */
+  --dj-primary: hsl(343, 100%, 58%);
+  --dj-secondary: hsl(48, 100%, 52%);
+  --dj-dark: hsl(0, 0%, 5%);
+  --dj-card-dark: hsl(0, 0%, 10%);
+  --dj-primary-hover: hsl(343, 89%, 46%);
+  --dj-secondary-hover: hsl(45, 93%, 47%);
+}
+
+.dark {
+  --background: hsl(220, 13%, 5%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 10%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(0, 0%, 10%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(343, 100%, 58%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(48, 100%, 52%);
+  --secondary-foreground: hsl(220, 13%, 5%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --accent: hsl(0, 0%, 15%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 85%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 30%);
+  --input: hsl(0, 0%, 20%);
+  --ring: hsl(343, 100%, 58%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    background: linear-gradient(135deg, #FF2D55 0%, #FFD60A 100%);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, #FF2D55 0%, #FFD60A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .card-hover-effect {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover-effect:hover {
+    transform: scale(1.05);
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .animate-bounce-gentle {
+    animation: bounceGentle 2s infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes bounceGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
