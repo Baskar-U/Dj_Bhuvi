@@ -1,0 +1,223 @@
+{
+  "branding": {
+    "name": "DJ Ananya",
+    "tagline": "Pittsburgh’s Premier Indian & Western Music DJ",
+    "logo": "assets/logo.png",
+    "theme": {
+      "primaryColor": "#FF2D55",
+      "secondaryColor": "#FFD60A",
+      "background": "#0D0D0D",
+      "textColor": "#FFFFFF",
+      "gradient": "linear-gradient(135deg, #FF2D55 0%, #FFD60A 100%)",
+      "fontFamily": "Poppins, sans-serif"
+    }
+  },
+  "hero": {
+    "headline": "Where Indian & Western Beats Come Alive!",
+    "subheadline": "High-energy DJ blending Bollywood, South Indian, Punjabi & Western hits for unforgettable parties.",
+    "backgroundImage": "assets/hero-bg.jpg",
+    "ctaButtons": [
+      {
+        "label": "Book Now",
+        "link": "#contact",
+        "style": "primary"
+      },
+      {
+        "label": "Listen Demo Mix",
+        "link": "#demo",
+        "style": "secondary"
+      }
+    ],
+    "animations": {
+      "headline": "fadeInUp",
+      "subheadline": "fadeIn",
+      "buttons": "bounce"
+    }
+  },
+  "sections": {
+    "events": {
+      "title": "Events She Rocks",
+      "cards": [
+        {
+          "icon": "🎉",
+          "title": "Birthday Parties",
+          "description": "Customized playlists that match the theme and mood of your celebration."
+        },
+        {
+          "icon": "💍",
+          "title": "Weddings & Receptions",
+          "description": "From baraat beats to reception anthems, she sets the tone for your big day."
+        },
+        {
+          "icon": "👯",
+          "title": "Ladies’ Day Out / Girls’ Night",
+          "description": "Fun, upbeat, and unforgettable vibes with a mix of global hits."
+        },
+        {
+          "icon": "🎊",
+          "title": "Cultural Events & Festivals",
+          "description": "South Indian beats, Bollywood hits, and fusion tracks to celebrate tradition in style."
+        },
+        {
+          "icon": "🎶",
+          "title": "Corporate & Private Parties",
+          "description": "A professional yet vibrant atmosphere tailored to your guests."
+        }
+      ]
+    },
+    "music": {
+      "title": "Her Style & Music",
+      "description": "DJ Ananya is known for her ability to blend genres seamlessly.",
+      "genres": [
+        "Bollywood Hits & Remixes",
+        "Tamil, Telugu & Malayalam Superhits",
+        "Punjabi & Bhangra Beats",
+        "Hip-Hop, R&B & Pop",
+        "EDM, House & Dance Music",
+        "Old-School Classics with Modern Twists"
+      ],
+      "features": [
+        "Custom Playlists",
+        "Open to Requests",
+        "Fusion of Cultures"
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose DJ Ananya?",
+      "reasons": [
+        {
+          "title": "Cultural Fusion Expert",
+          "detail": "Fluent in Bollywood, South Indian, Punjabi, and Western genres for any crowd."
+        },
+        {
+          "title": "Professional Equipment",
+          "detail": "Crystal-clear sound with dazzling lighting setups."
+        },
+        {
+          "title": "Customized Playlists",
+          "detail": "Tailored to your theme, traditions, and preferences."
+        },
+        {
+          "title": "Energy & Passion",
+          "detail": "Keeps the vibe alive and the dance floor full."
+        },
+        {
+          "title": "Stress-Free Experience",
+          "detail": "Professional, friendly, and easy to work with."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Client Love",
+      "feedback": [
+        {
+          "quote": "DJ Ananya played a perfect mix of Bollywood and Tamil hits at our wedding — everyone was on the floor!",
+          "client": "Priya & Arjun"
+        },
+        {
+          "quote": "We loved how she balanced Western and Indian tracks. My guests didn’t want the night to end!",
+          "client": "Rahul & Megha"
+        },
+        {
+          "quote": "Professional, energetic, and such a fun vibe! She made our corporate party a huge success.",
+          "client": "TechCorp Pittsburgh"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let’s Get the Party Started!",
+      "description": "Book DJ Ananya today and let her turn your event into an unforgettable celebration.",
+      "details": {
+        "phone": "+1-412-555-1234",
+        "email": "dj.ananya@example.com",
+        "instagram": "@dj.ananya"
+      },
+      "form": {
+        "fields": [
+          {
+            "label": "Your Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "label": "Email or Phone",
+            "type": "text",
+            "required": true
+          },
+          {
+            "label": "Event Type",
+            "type": "text",
+            "required": false
+          },
+          {
+            "label": "Event Details",
+            "type": "textarea",
+            "required": false
+          }
+        ],
+        "submitButton": {
+          "label": "Send Request",
+          "style": "accent"
+        }
+      }
+    }
+  },
+  "ui": {
+    "buttons": {
+      "primary": {
+        "background": "#FF2D55",
+        "textColor": "#FFFFFF",
+        "hover": "#E11D48"
+      },
+      "secondary": {
+        "background": "#FFFFFF",
+        "textColor": "#000000",
+        "hover": "#F1F1F1"
+      },
+      "accent": {
+        "background": "#FFD60A",
+        "textColor": "#000000",
+        "hover": "#FACC15"
+      }
+    },
+    "cards": {
+      "background": "#1A1A1A",
+      "textColor": "#FFFFFF",
+      "borderRadius": "16px",
+      "shadow": "0px 8px 24px rgba(0,0,0,0.4)",
+      "hoverTransform": "scale(1.05)"
+    },
+    "animations": {
+      "fadeIn": {
+        "type": "opacity",
+        "duration": "1s",
+        "easing": "ease-in"
+      },
+      "fadeInUp": {
+        "type": "translateY",
+        "value": "-20px",
+        "duration": "1s",
+        "easing": "ease-out"
+      },
+      "bounce": {
+        "type": "scale",
+        "value": "1.1",
+        "duration": "0.5s",
+        "repeat": "infinite"
+      }
+    }
+  },
+  "seo": {
+    "title": "DJ Ananya – Pittsburgh’s Premier Indian & Western Music DJ",
+    "description": "Book DJ Ananya for weddings, birthdays, corporate & cultural events. Bollywood, South Indian, Punjabi & Top 40 Western hits.",
+    "keywords": [
+      "Pittsburgh DJ",
+      "Bollywood DJ",
+      "South Indian DJ",
+      "Punjabi DJ",
+      "Wedding DJ",
+      "Corporate DJ",
+      "DJ for cultural events"
+    ]
+  }
+}
